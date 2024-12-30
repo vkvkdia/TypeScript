@@ -1,0 +1,56 @@
+npm init 초기화
+
+
+
+npm install typescript -g  뒤는 글로벌 컴퓨터 모든 환경에서 사용가능
+
+npm i @types/node
+
+컴파일 하려면 tsc 경로 파일 
+
+파일명은 ts
+
+
+>sudo npm install ts-node -g
+ts-node를 하면 한방에 script 파일까지 컴파일 가능함
+
+
+타입스크립트 컴파일러 생성
+tsc --init
+
+모든 타입스크립트 한번에 실행
+
+{
+  "include": ["src"]
+}
+
+폴더안에 있는거 다실행 
+{
+  "compilerOptions": {
+    "target": "ES5"
+  },
+  버전을 정할수있음
+  
+  
+  es모듈
+  
+  import로 가져오고 export로 내보냄
+  
+      "skipLibCheck": true,
+	  
+	  타입검사 생략
+	  
+	  module : esNext
+	  환경에따라 모듈지정가능
+	  
+	  outDir 컴파일 생성될 위치 지정
+	  
+	  strict 하면 엄격한 검사모드 매개변수가 타입이 지정안되어있거나하면 오류띄움
+	  
+	  js ->ts 할시 문제가 생길수도있어서 끔
+	  
+	  타입스크립트는 모든파일을 전역모듈로 봄 같은scope안에 있다 즉 변수가 겹치면안됨
+	  파일분리시 사용해결법
+	  1. export {}; 격리된 모듈을 쓰면 격리됨.
+	  
+	  2.  "moduleDetection": "force" 컴파일러 파일에 추가해주면됨 자동으로 export{}; 해줌
