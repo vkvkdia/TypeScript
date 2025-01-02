@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // number
 let num1 = 123;
 // :number 타입주석 타입 어노테이션을 뜻함
@@ -27,7 +29,6 @@ let unde1 = undefined;
 let numA = null; // 이런식으로 처리할수있음.
 //리터널 타입
 let numB = 10;
-export {};
 //값으로 만들었기에 다른거면 안됨
 // 리터널 타입
 // 리터널 -> 값

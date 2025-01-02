@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // 배열 number[] 배열의 타입 지정
 let numArr = [1, 2, 3];
 // 배열
@@ -29,4 +31,3 @@ const users = [
     ["김아무개", 3],
     //    ["박아무개", 4,5] 첫번째 요소의 타입이 다르기때문에 매칭이안된다.
 ];
-export {};
